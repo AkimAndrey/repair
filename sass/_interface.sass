@@ -1,0 +1,48 @@
+*
+    box-sizing: border-box
+body
+    font-family: 'Museo Sans Light'
+.container
+    width: 1170px
+    margin: auto
+@media (max-width: 1200px)
+    .container
+        width: 760px
+@media (max-width: 768px)
+    .container
+        max-width: 580px
+        width: 90%
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 28px  
+    &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+.offer
+    padding: 91px 0 56px 0
+    &__button
+      padding: 26px 28px
+.section
+   &-title
+    font-size: 24px
+    +bold
+    text-align: center
+   &-subtitle
+    font-size: 16px
+    display: block
+.portfolio
+    padding: 88px 0 86px 0
+.input 
+    border: 1px solid $border-input
+    padding: 23px 26px
+    font-size: 15px
+    border-radius: 10px
+    &:last-child
+        padding: 23px 29px
+.arrows
+    &__left, &__right
+        &:hover
+            cursor: pointer
+    
