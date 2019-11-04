@@ -43,12 +43,35 @@
             margin-bottom: 66px
         &-block
             display: flex
+@media (max-width: 1200px)
+    .step
+        &s
+            padding: 60px 0 70px 0
+            &__title
+                font-size: 25px
+            &__subtitle
+                font-size: 16px
 @media (max-width: 768px)
     .step
         margin-bottom: 30px
+        &__image
+            margin-bottom: 13px
+        &__text
+            font-size: 12px;
+            max-width: 151px;
+            margin: auto;
+            line-height: 21px;
         &::after
             display: none
         &s
+            padding: 9px 0 86px 0
+            &__title
+                font-size: 18px
+                line-height: 23px
+                margin-bottom: 19px
+            &__subtitle
+                font-size: 14px
+                margin-bottom: 34px
             &-block
                 flex-direction: column
 @media (max-width: 1200px)
